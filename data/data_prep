@@ -1,4 +1,4 @@
-Data README:
+# Data Preparation:
 
 As required by the DESeq2 R package, the input dataset needs to be:
 1. unnormalized
