@@ -1,1 +1,26 @@
-Introduction 
+Data README:
+
+As required by the DESeq2 R package, the input dataset needs to be:
+1. unnormalized
+2. be in the format of DESeqDataSet, which can be prepared:
+
+    From transcript abundance files and tximport
+    From a count matrix
+    From htseq-count files
+    From a SummarizedExperiment object
+
+here we are provided with a count matrix (tab delimited text files) by NanoString after data collection, so second approach.
+
+Two things are needed by the function DESeqDataSetFromMatrix to generate a DESeq dataset for further calculation: 
+1) raw count matrix and 
+2) information about the count matrix. 
+By convention, we name them cts and coldata. 
+
+Make sure the column names of cts must match row names of coldata.
+
+Note about pre-processing txt files provided by Nanostring. Unfortunately, R is not happy with | or _ in the dataframe. 
+
+So it's better to use "find and replace" function of text editor and replace all | with . in order to proceed. 
+
+
+
