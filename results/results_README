@@ -1,2 +1,12 @@
-Here are four results of our data:
-1. 
+Here are results of our data:
+1. three csv: 
+  1) disease_status_results: without spatial info
+  2) disease_status_results_glo: highly DE genes in glomerulus 
+  3) disease_status_results_tub: highly DE genes in tubule 
+  
+2. DE10_XX:
+XX == glo: top 10 DE genes in XX
+
+3. XX_1gene_count:
+number of counts of top DE gene called XX for two disease status, healthy and DKD
+
